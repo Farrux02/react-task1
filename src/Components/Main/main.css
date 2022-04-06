@@ -3,8 +3,8 @@
 }
 
 .product__img{
-    width: 130px;
-    height: 170px;
+   width: 200px;
+   height: 200px;
 }
 
 .products-new__items{
@@ -15,7 +15,7 @@
 .product-item-wrapper{
     position: relative;
     width: 207px;
-    height: 380px;
+    height: 410px;
     margin: 0 16px;
 }
 
