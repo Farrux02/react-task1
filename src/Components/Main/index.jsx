@@ -10,21 +10,25 @@ const Main = ({ products }) => {
     <div key={product.id} className="product-item-wrapper">
       <img src={product.image} alt={product.name} className="product__img" />
       <p className="product__name">{product.name}</p>
-      {product.old_price && (
+      {product.old_price ? (
         <p className="prodcut__old-price">{product.old_price} $</p>
+      ) : (
+        <p>Скидок нет</p>
       )}
       <p>
         <strong className="prodcut__price">{product.price} $</strong>
       </p>
-      {product.monthly_pay && (
+      {product.monthly_pay ? (
         <p className="product__monthly-pay">
           От {product.monthly_pay} $/12 мес
         </p>
+      ) : (
+        <p className="product__monthly-pay">Рассрочка отсутствует</p>
       )}
       {product.in_stock !== 0 ? (
         <button className="cart-button">В корзину</button>
       ) : (
-        <button className="cart-button cart-button--disabled">В корзину</button>
+        <button className="cart-button cart-button--disabled">Товар недоступен</button>
       )}
     </div>
   ));
@@ -33,21 +37,25 @@ const Main = ({ products }) => {
     <div key={product.id} className="product-item-wrapper">
       <img src={product.image} alt={product.name} className="product__img" />
       <p className="product__name">{product.name}</p>
-      {product.old_price && (
+      {product.old_price ? (
         <p className="prodcut__old-price">{product.old_price} $</p>
+      ) : (
+        <p>Скидок нет</p>
       )}
       <p>
         <strong className="prodcut__price">{product.price} $</strong>
       </p>
-      {product.monthly_pay && (
+      {product.monthly_pay ? (
         <p className="product__monthly-pay">
           От {product.monthly_pay} $/12 мес
         </p>
+      ) : (
+        <p className="product__monthly-pay">Рассрочка отсутствует</p>
       )}
       {product.in_stock !== 0 ? (
         <button className="cart-button">В корзину</button>
       ) : (
-        <button className="cart-button cart-button--disabled">В корзину</button>
+        <button className="cart-button cart-button--disabled">Товар недоступен</button>
       )}
     </div>
   ));
@@ -66,21 +74,27 @@ const Main = ({ products }) => {
                   className="product__img"
                 />
                 <p className="product__name">{product.name}</p>
-                {product.old_price && (
+                {product.old_price ? (
                   <p className="prodcut__old-price">{product.old_price} $</p>
+                ) : (
+                  <p>Скидок нет</p>
                 )}
                 <p>
                   <strong className="prodcut__price">{product.price} $</strong>
                 </p>
-                {product.monthly_pay && (
+                {product.monthly_pay ? (
                   <p className="product__monthly-pay">
                     От {product.monthly_pay} $/12 мес
                   </p>
+                ) : (
+                  <p className="product__monthly-pay">Рассрочка отсутствует</p>
                 )}
                 {product.in_stock !== 0 ? (
                   <button className="cart-button">В корзину</button>
                 ) : (
-                  <button className="cart-button cart-button--disabled">В корзину</button>
+                  <button className="cart-button cart-button--disabled">
+                    Товар недоступен
+                  </button>
                 )}
               </div>
             ))}
