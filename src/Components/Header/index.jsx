@@ -56,7 +56,7 @@ const Header = ({ categories }) => {
               </li>
             ))}
             <li style={{marginLeft: '420px'}}>
-              <a href="">Repo</a>
+              <a href="https://github.com/Farrux02/react-task1">Repo</a>
             </li>
           </ul>
         </div>
