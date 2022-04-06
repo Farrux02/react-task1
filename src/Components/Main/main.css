@@ -1,0 +1,80 @@
+.products__heading{
+    margin: 32px 0px;
+}
+
+.product__img{
+    width: 130px;
+    height: 170px;
+}
+
+.products-new__items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-item-wrapper{
+    position: relative;
+    width: 207px;
+    height: 380px;
+    margin: 0 16px;
+}
+
+.product__name{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.prodcut__old-price{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration-line: line-through;
+    color: #525252;
+}
+
+.product__price{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.product__monthly-pay{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #525252;
+}
+
+.all-products__heading-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.all-products__heading-wrapper span{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+.cart-button{
+    position: absolute;
+    bottom: 12px;
+    border: none;
+    cursor: pointer;
+    width: 115px;
+    height: 40px;
+    background: #4D96FF;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.cart-button--disabled{
+    cursor: auto;
+    background: #CCCCCC
+}
